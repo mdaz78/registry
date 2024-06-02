@@ -3,9 +3,11 @@ import Header from "../components/Header";
 
 const Root = () => {
   return (
-    <div>
+    <div className="">
       <Header />
-      <Outlet />
+      <div className="container p-20 mx-auto">
+        <Outlet />
+      </div>
     </div>
   );
 };

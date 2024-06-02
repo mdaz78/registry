@@ -3,7 +3,7 @@ import SearchInput from "./SearchInput";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between px-4 border-b h-14">
+    <div className="fixed flex items-center justify-between w-full px-4 bg-white border-b h-14">
       <div className="flex items-center space-x-2 text-sm">
         <Link to="/" className="text-lg font-bold">
           NPM Registry
