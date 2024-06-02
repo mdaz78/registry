@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { VscSearch } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
 
 const SearchInput = () => {
@@ -13,13 +14,20 @@ const SearchInput = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="term"
-        id="term"
-        value={term}
-        onChange={(e) => setTerm(e.target.value)}
-      />
+      <div className="relative">
+        <div className="absolute inset-y-0 flex items-center pl-3">
+          <VscSearch className="h-5 w-5 text-gray-500" />
+        </div>
+        <input
+          type="text"
+          name="term"
+          id="term"
+          value={term}
+          onChange={(e) => setTerm(e.target.value)}
+          className="pl-10 py-2 w-full border-2 shadow-none rounded-md"
+          placeholder="Search packages"
+        />
+      </div>
     </form>
   );
 };
