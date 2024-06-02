@@ -15,8 +15,8 @@ const SearchInput = () => {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        name="search-term"
-        id="search-term"
+        name="term"
+        id="term"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />
